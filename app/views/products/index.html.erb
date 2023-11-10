@@ -20,9 +20,10 @@
         </td>
         <td class="description">
           <h1><%= product.title %></h1>
-          <p>
-            <%= truncate(strip_tags(product.description), length: 80) %>
-          </p>
+          <p><%= truncate(strip_tags(product.description), length: 80) %></p>
+          <p><%= number_to_currency(product.price) %></p>
+        </td>
+        <td class="price">
         </td>
         <td class="actions">
           <ul>
